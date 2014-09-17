@@ -1,0 +1,71 @@
+@import url(http://fonts.googleapis.com/css?family=Wire+One|Raleway:400,300,600);
+@import "plugins";
+@import "variables";
+@import "mixins";
+@import "animations";
+
+@import "type";
+@import "intro";
+@import "about";
+@import "projects";
+
+body{
+	background: #6bbfad;
+
+}
+.pluginnav {
+	text-align: center;
+}
+.header{
+	position:relative;
+	z-index:3;
+}
+img.logonym{
+	padding:20px;
+}
+#intro{
+	height: 100vh;
+	width: 100%;
+	// background-image: url("../assets/bgsky.jpg");
+ //    background-repeat: no-repeat;
+ //    z-index:-31;
+ //    background-attachment: fixed;
+    & .container-fluid{
+    	position: relative;
+    	z-index:2;
+    }
+}
+.intro-text{
+	margin-top: 10vh;
+
+}
+.welcome{
+	margin-top: 10vh;
+}
+.project-container {
+	background: #fff;
+	height: 100vh;
+}
+.seperator1 {
+
+}
+.ball{
+	background: #fff;
+	height: 100px;
+	width: 100px;
+	border-radius:50%;
+	position: absolute;
+	z-index:4;
+    position:absolute;
+    left:50%;
+	bottom: -50px;
+    margin-left:-50px;
+    &:nth-of-type(2){
+    	position:relative;
+    }
+
+}
+.work-section{
+	height: 100vh;
+	background: #fff;
+}

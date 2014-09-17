@@ -1,0 +1,71 @@
+
+.cloud-container{
+	overflow:hidden;
+	position: fixed;
+	background-image: url("../assets/bgsky.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	top:0;
+
+
+}
+.cloud{
+	position: absolute;
+	height: 1000px;
+	width:2000px;
+	background-position: center;
+
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	top: 0px;
+}
+#cloud1{
+	background:url("../assets/cloud1.png");
+	z-index: -50;
+	top: 310px;
+	background-repeat: no-repeat;
+	@include animation(clouddrift2, 1800s, linear, 0, infinite);
+}
+#cloud2{
+	background:url("../assets/cloud2.png");
+	z-index: -49;
+    top: 250px;
+	background-repeat: no-repeat;
+	@include animation(clouddrift1, 1200s, linear, 10s, infinite);
+}
+#cloud3{
+	background:url("../assets/cloud3.png");
+	z-index: -48;
+	top: -120px;
+	background-repeat: no-repeat;
+	@include animation(clouddrift1, 600s, linear, 0, infinite);
+}
+#cloud4{
+	background:url("../assets/cloud4.png");
+	z-index: -47;
+	top: -150px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+	@include animation(clouddrift2, 300s, linear, 0, infinite);
+}
+#fairhill{
+	background:url("../assets/fairhill.png");
+	z-index: -46;
+	top: -75px;
+	margin: auto;
+}
+#lowcloud{
+	background:url("../assets/lowcloud.png");
+	z-index: -45;
+	width: 3000px;
+	top: 500px;
+	background-repeat: no-repeat;
+	@include animation(clouddrift1, 375s, linear, 0, infinite);
+}
+#nearhill{
+	background:url("../assets/nearhill-alt2.png");
+	z-index: -44;
+	top: -75px;
+}

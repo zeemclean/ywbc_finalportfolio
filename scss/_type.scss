@@ -1,0 +1,77 @@
+h1{
+	font-family:$wire;
+	color: #666;
+	font-size:7em;
+	margin: 0;
+	text-align: left;
+	@include respond($desktop){
+		font-size: 7em;
+		text-align: center;
+	}
+
+	&.greeting{
+		color: white;
+		font-family: $wire;
+		text-align: center;
+		font-size: 7em;
+		@include respond($cell){
+			font-size: 8em;
+		}
+	}
+}
+h2{
+	color: #666;
+	&.about{
+		font-size: 2em;
+		color: $sky;
+		
+		font-family: $rale;
+		@include respond($desktop){
+			
+		}
+	}
+	&.art{
+		color: $cloud;
+	}
+	&.code{
+		color: $grass;
+	}
+	&.project-name{
+		color: #fff;
+	}
+
+}
+small {
+	color: #fff;
+}
+
+p{
+	font-family: $rale;
+	line-height: 1.5em;
+	font-size: 1em;
+	color: #666;
+	&.large{
+		font-weight: 300;
+		color: white;
+		font-size: 1.6em;
+		text-align: center;
+		@include respond($cell){
+			font-size: 2em;
+		}
+	}
+	&.about{
+		font-size: 1.4em;
+	}
+}
+h2.art{
+	
+}
+span.interest{
+	color:$sky;
+}
+a{
+	color: $grass;
+	&:hover{
+		color:$grass;
+	}
+}
