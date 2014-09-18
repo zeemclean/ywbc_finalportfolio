@@ -1,13 +1,14 @@
 #aboutMe{
-	padding-bottom: 3em;
+	
 	background: #fff;
 	border-top: 50px solid #fff;
 	width: 100%;
 	padding-top: 2em;
-	position:absolute;
+	padding-bottom: 3em;
 	z-index:100;
-	@include respond($desktop){
+	@include respond($tablet){
 		max-height: 75vh;
+		// position:absolute;
 	}
 }
 #me{
@@ -31,7 +32,7 @@
 }
 ul {
 	margin: 0;
-	padding: 0;
+	padding-top: .5em;
 	& li {
 		color: #666;
 		font-size: 1.3em;

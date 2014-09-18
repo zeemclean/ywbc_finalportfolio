@@ -1,0 +1,35 @@
+{
+	"projects":[
+		{
+			"id": "enviro-sketch",
+			"title": "Environment Sketches",
+			"date": "2014 - ongoing",
+			"type": "Digital painting",
+			"text": null,
+			"behanceLink": null,
+			"img1": "http://placehold.it/730x350",
+			"img2": "http://placehold.it/600x600",
+			"img3": "http://placehold.it/600x600",
+			"img4": "http://placehold.it/600x600",
+			"img5": "http://placehold.it/730x350"
+			
+			
+		},
+
+		{
+			"id": "rx2",
+			"title": "RX Squared",
+			"date": "2014",
+			"type": "Branding &amp; Website Design",
+			"text": "This website design for a hypothetical, unisex, crossfit apparel company was eventually coded by the awesome hand of Andrew Nicholas. For the design and branding, I wanted to create an bold and energetic atmosphere while maintaining a relatively gender neutral style. I had a lot of fun coming up with copy for this project, creating new and exciting materials for shoes and ",
+			"behanceLink": null,
+			"img1": "http://placehold.it/730x350",
+			"img2": "http://placehold.it/600x600",
+			"img3": "http://placehold.it/600x600",
+			"img4": "http://placehold.it/600x600",
+			"img5": "http://placehold.it/730x350"
+			
+			
+		}
+	]
+}

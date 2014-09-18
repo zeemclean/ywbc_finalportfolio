@@ -585,7 +585,7 @@ h1.greeting {
 @media screen and (min-width: 480px) {
   /* line 12, ../scss/_type.scss */
   h1.greeting {
-    font-size: 8em;
+    font-size: 9em;
   }
 }
 
@@ -599,32 +599,33 @@ h2.about {
   color: #6bbfad;
   font-family: "Raleway", sans-serif;
 }
-/* line 33, ../scss/_type.scss */
+/* line 31, ../scss/_type.scss */
 h2.art {
   color: #d69782;
 }
-/* line 36, ../scss/_type.scss */
+/* line 34, ../scss/_type.scss */
 h2.code {
   color: #c4a34d;
 }
-/* line 39, ../scss/_type.scss */
+/* line 37, ../scss/_type.scss */
 h2.project-name {
   color: #fff;
 }
 
-/* line 44, ../scss/_type.scss */
-small {
+/* line 42, ../scss/_type.scss */
+h1 small {
   color: #fff;
+  font-size: 20%;
 }
 
-/* line 48, ../scss/_type.scss */
+/* line 47, ../scss/_type.scss */
 p {
   font-family: "Raleway", sans-serif;
   line-height: 1.5em;
   font-size: 1em;
   color: #666;
 }
-/* line 53, ../scss/_type.scss */
+/* line 52, ../scss/_type.scss */
 p.large {
   font-weight: 300;
   color: white;
@@ -632,22 +633,22 @@ p.large {
   text-align: center;
 }
 @media screen and (min-width: 480px) {
-  /* line 53, ../scss/_type.scss */
+  /* line 52, ../scss/_type.scss */
   p.large {
     font-size: 2em;
   }
 }
-/* line 62, ../scss/_type.scss */
+/* line 61, ../scss/_type.scss */
 p.about {
   font-size: 1.4em;
 }
 
-/* line 69, ../scss/_type.scss */
+/* line 68, ../scss/_type.scss */
 span.interest {
   color: #6bbfad;
 }
 
-/* line 72, ../scss/_type.scss */
+/* line 71, ../scss/_type.scss */
 a {
   color: #c4a34d;
 }
@@ -656,19 +657,34 @@ a:hover {
   color: #c4a34d;
 }
 
+/* line 79, ../scss/_type.scss */
+p.large a {
+  color: #fff;
+}
+/* line 81, ../scss/_type.scss */
+p.large a:hover {
+  color: #fff;
+}
+
 /* line 2, ../scss/_intro.scss */
 .cloud-container {
   overflow: hidden;
   position: fixed;
   background-image: url("../assets/bgsky.jpg");
+  background-position: center top;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   width: 100%;
   height: 100%;
   top: 0;
+  z-index: -51;
 }
 
-/* line 14, ../scss/_intro.scss */
+/* line 16, ../scss/_intro.scss */
+.cloud-wrapper {
+  position: fixed;
+}
+
+/* line 21, ../scss/_intro.scss */
 .cloud {
   position: absolute;
   height: 1000px;
@@ -679,7 +695,7 @@ a:hover {
   top: 0px;
 }
 
-/* line 24, ../scss/_intro.scss */
+/* line 31, ../scss/_intro.scss */
 #cloud1 {
   background: url("../assets/cloud1.png");
   z-index: -50;
@@ -692,7 +708,7 @@ a:hover {
   animation: clouddrift2 1800s linear 0 infinite both;
 }
 
-/* line 31, ../scss/_intro.scss */
+/* line 38, ../scss/_intro.scss */
 #cloud2 {
   background: url("../assets/cloud2.png");
   z-index: -49;
@@ -705,7 +721,7 @@ a:hover {
   animation: clouddrift1 1200s linear 10s infinite both;
 }
 
-/* line 38, ../scss/_intro.scss */
+/* line 45, ../scss/_intro.scss */
 #cloud3 {
   background: url("../assets/cloud3.png");
   z-index: -48;
@@ -718,12 +734,11 @@ a:hover {
   animation: clouddrift1 600s linear 0 infinite both;
 }
 
-/* line 45, ../scss/_intro.scss */
+/* line 52, ../scss/_intro.scss */
 #cloud4 {
   background: url("../assets/cloud4.png");
   z-index: -47;
   top: -150px;
-  overflow: hidden;
   background-repeat: no-repeat;
   -webkit-animation: clouddrift2 300s linear 0 infinite both;
   -moz-animation: clouddrift2 300s linear 0 infinite both;
@@ -732,7 +747,7 @@ a:hover {
   animation: clouddrift2 300s linear 0 infinite both;
 }
 
-/* line 53, ../scss/_intro.scss */
+/* line 60, ../scss/_intro.scss */
 #fairhill {
   background: url("../assets/fairhill.png");
   z-index: -46;
@@ -740,7 +755,7 @@ a:hover {
   margin: auto;
 }
 
-/* line 59, ../scss/_intro.scss */
+/* line 66, ../scss/_intro.scss */
 #lowcloud {
   background: url("../assets/lowcloud.png");
   z-index: -45;
@@ -754,7 +769,7 @@ a:hover {
   animation: clouddrift1 375s linear 0 infinite both;
 }
 
-/* line 67, ../scss/_intro.scss */
+/* line 74, ../scss/_intro.scss */
 #nearhill {
   background: url("../assets/nearhill-alt2.png");
   z-index: -44;
@@ -763,27 +778,26 @@ a:hover {
 
 /* line 1, ../scss/_about.scss */
 #aboutMe {
-  padding-bottom: 3em;
   background: #fff;
   border-top: 50px solid #fff;
   width: 100%;
   padding-top: 2em;
-  position: absolute;
+  padding-bottom: 3em;
   z-index: 100;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   /* line 1, ../scss/_about.scss */
   #aboutMe {
     max-height: 75vh;
   }
 }
 
-/* line 13, ../scss/_about.scss */
+/* line 14, ../scss/_about.scss */
 #me {
   margin-bottom: 4em;
 }
 
-/* line 16, ../scss/_about.scss */
+/* line 17, ../scss/_about.scss */
 .placeholder {
   height: 150px;
   width: 150px;
@@ -791,65 +805,79 @@ a:hover {
   background: #fff;
   margin: 0 auto;
 }
-/* line 22, ../scss/_about.scss */
+/* line 23, ../scss/_about.scss */
 .placeholder.art {
   border: solid 0.4em #d69782;
 }
-/* line 25, ../scss/_about.scss */
+/* line 26, ../scss/_about.scss */
 .placeholder.design {
   border: solid 0.4em #6bbfad;
 }
-/* line 28, ../scss/_about.scss */
+/* line 29, ../scss/_about.scss */
 .placeholder.code {
   border: solid 0.4em #c4a34d;
 }
 
-/* line 32, ../scss/_about.scss */
+/* line 33, ../scss/_about.scss */
 ul {
   margin: 0;
-  padding: 0;
+  padding-top: .5em;
 }
-/* line 35, ../scss/_about.scss */
+/* line 36, ../scss/_about.scss */
 ul li {
   color: #666;
   font-size: 1.3em;
   list-style: none;
 }
 
-/* line 45, ../scss/_about.scss */
+/* line 46, ../scss/_about.scss */
 .skill {
   margin-bottom: 4em;
 }
 @media screen and (min-width: 992px) {
-  /* line 45, ../scss/_about.scss */
+  /* line 46, ../scss/_about.scss */
   .skill {
     margin-bottom: 0;
   }
 }
 
-/* line 51, ../scss/_about.scss */
+/* line 52, ../scss/_about.scss */
 .skills-row {
   height: 33vh;
 }
 
 /* line 2, ../scss/_projects.scss */
 #work-section {
-  background: #ccc;
-  position: absolute;
   width: 100%;
-  top: 200vh;
+}
+@media screen and (min-width: 768px) {
+  /* line 2, ../scss/_projects.scss */
+  #work-section {
+    margin-top: 200px;
+    margin-bottom: 8em;
+  }
+}
+/* line 9, ../scss/_projects.scss */
+#work-section #project-container {
+  background: #fff;
+  border: solid 2em #fff;
+  border-radius: 2em;
 }
 
-/* line 11, ../scss/_projects.scss */
+/* line 16, ../scss/_projects.scss */
+.projects-header {
+  padding: 3em;
+}
+
+/* line 20, ../scss/_projects.scss */
 .project-item {
   margin: 15px 0 15px 0;
   overflow: hidden;
 }
 
-/* line 19, ../scss/_projects.scss */
+/* line 28, ../scss/_projects.scss */
 figure {
   overflow: hidden;
-  background: #fff;
 }
 /* line 9, ../scss/_mixins.scss */
 figure:after {
@@ -858,79 +886,85 @@ figure:after {
   clear: both;
 }
 
-/* line 24, ../scss/_projects.scss */
+/* line 33, ../scss/_projects.scss */
 div.figcaption {
   height: 100%;
 }
 
-/* line 12, ../scss/main.scss */
+/* line 1, ../scss/_contact.scss */
+#contact-section {
+  height: 100vh;
+  padding-top: 25vh;
+}
+
+/* line 13, ../scss/main.scss */
 body {
   background: #6bbfad;
 }
 
-/* line 16, ../scss/main.scss */
+/* line 18, ../scss/main.scss */
+div.content {
+  position: absolute;
+  width: 100%;
+}
+
+/* line 23, ../scss/main.scss */
 .pluginnav {
   text-align: center;
 }
 
-/* line 19, ../scss/main.scss */
+/* line 26, ../scss/main.scss */
 .header {
   position: relative;
   z-index: 3;
 }
 
-/* line 23, ../scss/main.scss */
+/* line 30, ../scss/main.scss */
 img.logonym {
   padding: 20px;
 }
 
-/* line 26, ../scss/main.scss */
+/* line 33, ../scss/main.scss */
 #intro {
   height: 100vh;
   width: 100%;
 }
-/* line 33, ../scss/main.scss */
+/* line 40, ../scss/main.scss */
 #intro .container-fluid {
   position: relative;
   z-index: 2;
 }
 
-/* line 38, ../scss/main.scss */
+/* line 45, ../scss/main.scss */
 .intro-text {
   margin-top: 10vh;
 }
 
-/* line 42, ../scss/main.scss */
+/* line 49, ../scss/main.scss */
 .welcome {
   margin-top: 10vh;
 }
 
-/* line 45, ../scss/main.scss */
-.project-container {
-  background: #fff;
-  height: 100vh;
-}
-
-/* line 52, ../scss/main.scss */
+/* line 54, ../scss/main.scss */
 .ball {
   background: #fff;
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  position: absolute;
   z-index: 4;
-  position: absolute;
-  left: 50%;
-  bottom: -50px;
-  margin-left: -50px;
-}
-/* line 63, ../scss/main.scss */
-.ball:nth-of-type(2) {
-  position: relative;
 }
 
-/* line 68, ../scss/main.scss */
-.work-section {
-  height: 100vh;
+/* line 63, ../scss/main.scss */
+.dimmer {
+  postion: absolute;
+  z-index: 100;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 69, ../scss/main.scss */
+div.project-detail {
+  postion: absolute;
   background: #fff;
+  z-index: 110;
 }

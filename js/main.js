@@ -8,4 +8,17 @@ $(document).ready(function(){
 			transitionDuration: 500
 		});
 	});
+	getProject();
 });
+
+function getProject(){
+
+
+	$.getJSON('projects.json', function(data) {
+		console.log(data);
+		var source = $('#project-detail').html();
+		var template = Handlebars.compile(source);
+		$('body').append(template(data));
+
+	});
+}

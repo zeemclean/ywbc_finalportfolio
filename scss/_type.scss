@@ -15,7 +15,7 @@ h1{
 		text-align: center;
 		font-size: 7em;
 		@include respond($cell){
-			font-size: 8em;
+			font-size: 9em;
 		}
 	}
 }
@@ -26,9 +26,7 @@ h2{
 		color: $sky;
 		
 		font-family: $rale;
-		@include respond($desktop){
-			
-		}
+
 	}
 	&.art{
 		color: $cloud;
@@ -41,8 +39,9 @@ h2{
 	}
 
 }
-small {
+h1 small {
 	color: #fff;
+	font-size: 20%
 }
 
 p{
@@ -71,7 +70,15 @@ span.interest{
 }
 a{
 	color: $grass;
+
 	&:hover{
 		color:$grass;
 	}
+	
 }
+p.large a{
+		color: #fff;
+		&:hover{
+			color: #fff;
+		}
+	}

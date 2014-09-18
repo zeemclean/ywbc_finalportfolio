@@ -1,11 +1,20 @@
 
 #work-section{
-    background: #ccc;
-    position: absolute;
+// background: rgba(255, 255, 255, 1);
     width: 100%;
-    top: 200vh;
+    @include respond($tablet){
+        margin-top: 200px;
+        margin-bottom: 8em;
+    }
+#project-container{
+    background: #fff;
+    border: solid 2em #fff;
+    border-radius: 2em;
+}
 
-
+}
+.projects-header{
+    padding: 3em;
 }
 
 .project-item{
@@ -18,7 +27,7 @@
 }
 figure{
     overflow: hidden;
-    background: #fff;
+
     @include clearfix;
 }
 div.figcaption{ 
