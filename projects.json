@@ -5,13 +5,21 @@
 			"title": "Environment Sketches",
 			"date": "2014 - ongoing",
 			"type": "Digital painting",
-			"text": null,
+			"text": "Quick studies and sketchess to capture the essence of a scene.",
 			"behanceLink": null,
-			"img1": "http://placehold.it/730x350",
-			"img2": "http://placehold.it/600x600",
-			"img3": "http://placehold.it/600x600",
-			"img4": "http://placehold.it/600x600",
-			"img5": "http://placehold.it/730x350"
+			"img1": "assets/projects/ce1.jpg",
+			"img2": "assets/projects/ce2.jpg",
+			"img3": null,
+			"img4": null,
+			"img5": "assets/projects/ce3.jpg",
+			"techs":[
+				{
+					"tech":"Photoshop"
+				}, 
+				{
+					"tech":"Painter's wheel"
+				}
+			]
 			
 			
 		},
@@ -28,8 +36,7 @@
 			"img3": "http://placehold.it/600x600",
 			"img4": "http://placehold.it/600x600",
 			"img5": "http://placehold.it/730x350"
-			
-			
+				
 		}
 	]
 }

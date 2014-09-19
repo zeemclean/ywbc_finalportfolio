@@ -1,4 +1,8 @@
 #contact-section{
-	height: 100vh;
-	padding-top: 25vh;
+	height:66vh;
+	padding-top: 8em;
+	@include respond($cell){
+		height: 100vh;
+		padding-top: 25vh;
+	}
 }

@@ -23,20 +23,20 @@ div.content{
 .pluginnav {
 	text-align: center;
 }
-.header{
+header{
 	position:relative;
-	z-index:3;
+	z-index:9001;
 }
 img.logonym{
 	padding:20px;
+
 }
 #intro{
+	
+	@include respond($cell){
 	height: 100vh;
 	width: 100%;
-	//background-image: url("../assets/bgsky.jpg");
- 	//background-repeat: no-repeat;
- 	//z-index:-31;
- 	//background-attachment: fixed;
+	}
     & .container-fluid{
     	position: relative;
     	z-index:2;
@@ -50,16 +50,6 @@ img.logonym{
 	margin-top: 10vh;
 }
 
-
-.ball{
-	background: #fff;
-	height: 100px;
-	width: 100px;
-	border-radius:50%;
-	
-	z-index:4;
-
-}
 .dimmer{
 	postion: absolute;
 	z-index: 100;
@@ -70,4 +60,17 @@ div.project-detail{
 	postion: absolute;
 	background:#fff;
 	z-index: 110;
+}
+div.scroll-icon{
+	background:url("../assets/scroll.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 100%;
+
+	opacity:0.3;
+	@include transition(all, 0.3s, linear, 0);
+	&:hover{
+		opacity:1;
+	}
 }

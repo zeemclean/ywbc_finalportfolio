@@ -76,3 +76,30 @@
 	z-index: -44;
 	top: -75px;
 }
+
+
+div.smedia{
+	position:fixed;
+ 
+	padding-top:4vh;
+
+	
+}
+div.smedia ul{
+	float: right;
+}
+a.smedia-link{
+	
+}
+li.smedia-icons a{
+	display:block;
+	height: 100%;
+	width: 100%;
+	opacity:0.3;
+	padding: 20px;
+	@include transition(all, 0.3s, linear, 0);
+	&:hover{
+		opacity: 1;
+	}
+
+}

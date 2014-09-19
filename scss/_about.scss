@@ -1,35 +1,18 @@
 #aboutMe{
 	
-	background: #fff;
-	border-top: 50px solid #fff;
 	width: 100%;
-	padding-top: 2em;
+
 	padding-bottom: 3em;
 	z-index:100;
 	@include respond($tablet){
-		max-height: 75vh;
+		height: 50vh;
 		// position:absolute;
 	}
 }
 #me{
 	margin-bottom: 4em; 
 }
-.placeholder{
-	height: 150px;
-	width: 150px;
-	border-radius: 50%;
-	background: #fff;
-	margin: 0 auto;
-	&.art{
-		border: solid .4em $cloud;
-	}
-	&.design{
-		border: solid .4em $sky;
-	}
-	&.code{
-		border: solid .4em $grass;
-	}
-}
+
 ul {
 	margin: 0;
 	padding-top: .5em;
@@ -43,12 +26,3 @@ ul {
 		
 	}
 }
- .skill {
- 	margin-bottom: 4em;
- 	@include respond($desktop){
- 		margin-bottom: 0;
- 	}
- }
- .skills-row{
- 	height: 33vh;
- }

@@ -48,9 +48,9 @@ nav a:focus {
   opacity: .3;
   font-weight: 700;
   text-shadow: none;
-  -webkit-transition: color 0.3s;
-  -moz-transition: color 0.3s;
-  transition: color 0.3s;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 /* line 51, ../scss/_plugins.scss */
@@ -563,7 +563,7 @@ div.effect-lily:hover p {
 /* line 1, ../scss/_type.scss */
 h1 {
   font-family: "Wire One", sans-serif;
-  color: #666;
+  color: #fff;
   font-size: 7em;
   margin: 0;
   text-align: left;
@@ -611,21 +611,33 @@ h2.code {
 h2.project-name {
   color: #fff;
 }
+/* line 39, ../scss/_type.scss */
+h2.project-name.dark {
+  color: #333;
+  font-size: 2.5em;
+}
 
-/* line 42, ../scss/_type.scss */
+/* line 47, ../scss/_type.scss */
+h3.scroll {
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* line 53, ../scss/_type.scss */
 h1 small {
   color: #fff;
   font-size: 20%;
 }
 
-/* line 47, ../scss/_type.scss */
+/* line 58, ../scss/_type.scss */
 p {
   font-family: "Raleway", sans-serif;
   line-height: 1.5em;
   font-size: 1em;
   color: #666;
 }
-/* line 52, ../scss/_type.scss */
+/* line 63, ../scss/_type.scss */
 p.large {
   font-weight: 300;
   color: white;
@@ -633,37 +645,60 @@ p.large {
   text-align: center;
 }
 @media screen and (min-width: 480px) {
-  /* line 52, ../scss/_type.scss */
+  /* line 63, ../scss/_type.scss */
   p.large {
     font-size: 2em;
   }
 }
-/* line 61, ../scss/_type.scss */
+/* line 72, ../scss/_type.scss */
 p.about {
   font-size: 1.4em;
+  padding: 2em;
+  background: #fff;
+  border-radius: 2em;
+}
+/* line 78, ../scss/_type.scss */
+p.project-description {
+  padding-bottom: 2em;
 }
 
-/* line 68, ../scss/_type.scss */
+/* line 85, ../scss/_type.scss */
 span.interest {
   color: #6bbfad;
 }
 
-/* line 71, ../scss/_type.scss */
+/* line 88, ../scss/_type.scss */
 a {
-  color: #c4a34d;
+  color: #6bbfad;
+  text-decoration: underline;
+  -webkit-transition: all 0.3s linear 0;
+  -moz-transition: all 0.3s linear 0;
+  -o-transition: all 0.3s linear 0;
+  -ms-transition: all 0.3s linear 0;
+  transition: all 0.3s linear 0;
 }
-/* line 74, ../scss/_type.scss */
+/* line 92, ../scss/_type.scss */
 a:hover {
-  color: #c4a34d;
+  color: #d69782;
 }
 
-/* line 79, ../scss/_type.scss */
+/* line 97, ../scss/_type.scss */
 p.large a {
   color: #fff;
+  -webkit-transition: all 0.3s linear 0;
+  -moz-transition: all 0.3s linear 0;
+  -o-transition: all 0.3s linear 0;
+  -ms-transition: all 0.3s linear 0;
+  transition: all 0.3s linear 0;
 }
-/* line 81, ../scss/_type.scss */
+/* line 101, ../scss/_type.scss */
 p.large a:hover {
-  color: #fff;
+  color: #d69782;
+}
+
+/* line 106, ../scss/_type.scss */
+.dark {
+  color: #666;
 }
 
 /* line 2, ../scss/_intro.scss */
@@ -776,74 +811,63 @@ p.large a:hover {
   top: -75px;
 }
 
+/* line 81, ../scss/_intro.scss */
+div.smedia {
+  position: fixed;
+  padding-top: 4vh;
+}
+
+/* line 88, ../scss/_intro.scss */
+div.smedia ul {
+  float: right;
+}
+
+/* line 94, ../scss/_intro.scss */
+li.smedia-icons a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  padding: 20px;
+  -webkit-transition: all 0.3s linear 0;
+  -moz-transition: all 0.3s linear 0;
+  -o-transition: all 0.3s linear 0;
+  -ms-transition: all 0.3s linear 0;
+  transition: all 0.3s linear 0;
+}
+/* line 101, ../scss/_intro.scss */
+li.smedia-icons a:hover {
+  opacity: 1;
+}
+
 /* line 1, ../scss/_about.scss */
 #aboutMe {
-  background: #fff;
-  border-top: 50px solid #fff;
   width: 100%;
-  padding-top: 2em;
   padding-bottom: 3em;
   z-index: 100;
 }
 @media screen and (min-width: 768px) {
   /* line 1, ../scss/_about.scss */
   #aboutMe {
-    max-height: 75vh;
+    height: 50vh;
   }
 }
 
-/* line 14, ../scss/_about.scss */
+/* line 12, ../scss/_about.scss */
 #me {
   margin-bottom: 4em;
 }
 
-/* line 17, ../scss/_about.scss */
-.placeholder {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  background: #fff;
-  margin: 0 auto;
-}
-/* line 23, ../scss/_about.scss */
-.placeholder.art {
-  border: solid 0.4em #d69782;
-}
-/* line 26, ../scss/_about.scss */
-.placeholder.design {
-  border: solid 0.4em #6bbfad;
-}
-/* line 29, ../scss/_about.scss */
-.placeholder.code {
-  border: solid 0.4em #c4a34d;
-}
-
-/* line 33, ../scss/_about.scss */
+/* line 16, ../scss/_about.scss */
 ul {
   margin: 0;
   padding-top: .5em;
 }
-/* line 36, ../scss/_about.scss */
+/* line 19, ../scss/_about.scss */
 ul li {
   color: #666;
   font-size: 1.3em;
   list-style: none;
-}
-
-/* line 46, ../scss/_about.scss */
-.skill {
-  margin-bottom: 4em;
-}
-@media screen and (min-width: 992px) {
-  /* line 46, ../scss/_about.scss */
-  .skill {
-    margin-bottom: 0;
-  }
-}
-
-/* line 52, ../scss/_about.scss */
-.skills-row {
-  height: 33vh;
 }
 
 /* line 2, ../scss/_projects.scss */
@@ -891,10 +915,49 @@ div.figcaption {
   height: 100%;
 }
 
+/* line 37, ../scss/_projects.scss */
+.modal-dialog {
+  width: 100%;
+}
+
+/* line 40, ../scss/_projects.scss */
+.modal-content {
+  width: 100%;
+}
+
+/* line 43, ../scss/_projects.scss */
+.modal-image {
+  padding-bottom: 20px 30px;
+}
+
+/* line 46, ../scss/_projects.scss */
+.close {
+  color: #fff;
+  font-size: 40px;
+  opacity: 1;
+}
+
+/* line 51, ../scss/_projects.scss */
+ul#techs {
+  margin-bottom: 1em;
+}
+
+/* line 54, ../scss/_projects.scss */
+.description-column {
+  padding-left: 30px;
+}
+
 /* line 1, ../scss/_contact.scss */
 #contact-section {
-  height: 100vh;
-  padding-top: 25vh;
+  height: 66vh;
+  padding-top: 8em;
+}
+@media screen and (min-width: 480px) {
+  /* line 1, ../scss/_contact.scss */
+  #contact-section {
+    height: 100vh;
+    padding-top: 25vh;
+  }
 }
 
 /* line 13, ../scss/main.scss */
@@ -914,9 +977,9 @@ div.content {
 }
 
 /* line 26, ../scss/main.scss */
-.header {
+header {
   position: relative;
-  z-index: 3;
+  z-index: 9001;
 }
 
 /* line 30, ../scss/main.scss */
@@ -924,10 +987,12 @@ img.logonym {
   padding: 20px;
 }
 
-/* line 33, ../scss/main.scss */
-#intro {
-  height: 100vh;
-  width: 100%;
+@media screen and (min-width: 480px) {
+  /* line 34, ../scss/main.scss */
+  #intro {
+    height: 100vh;
+    width: 100%;
+  }
 }
 /* line 40, ../scss/main.scss */
 #intro .container-fluid {
@@ -945,16 +1010,7 @@ img.logonym {
   margin-top: 10vh;
 }
 
-/* line 54, ../scss/main.scss */
-.ball {
-  background: #fff;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  z-index: 4;
-}
-
-/* line 63, ../scss/main.scss */
+/* line 53, ../scss/main.scss */
 .dimmer {
   postion: absolute;
   z-index: 100;
@@ -962,9 +1018,28 @@ img.logonym {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* line 69, ../scss/main.scss */
+/* line 59, ../scss/main.scss */
 div.project-detail {
   postion: absolute;
   background: #fff;
   z-index: 110;
+}
+
+/* line 64, ../scss/main.scss */
+div.scroll-icon {
+  background: url("../assets/scroll.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100%;
+  opacity: 0.3;
+  -webkit-transition: all 0.3s linear 0;
+  -moz-transition: all 0.3s linear 0;
+  -o-transition: all 0.3s linear 0;
+  -ms-transition: all 0.3s linear 0;
+  transition: all 0.3s linear 0;
+}
+/* line 73, ../scss/main.scss */
+div.scroll-icon:hover {
+  opacity: 1;
 }

@@ -9,6 +9,8 @@ $(document).ready(function(){
 		});
 	});
 	getProject();
+
+
 });
 
 function getProject(){

@@ -46,12 +46,22 @@
 		<div class="cloud" id="nearhill"></div>
 	</div>
 </div>
-<div id="intro">
-	<div class="header">
-	 	<div class="logo">
+<header class="clearfix">
+	 	<div class="logo col-md-12">
 	 		<img src="assets/zmlogo-175.png" alt="" class="logonym">
+	 	
+	 	<div class="smedia hidden-xs">
+	 		<ul>
+	 			<li class="smedia-icons"><a class="smedia-link" href='mai&#108;to&#58;z%&#54;Fe&#97;%6B&#37;6D&#37;63&#108;ean%40&#103;mail&#46;com'><img src="assets/mail.png" alt=""></a></li>
+	 			<li class="smedia-icons"><a class="smedia-link" href="https://www.behance.net/zoe-mclean"><img src="assets/behance.png" alt=""></a></li>
+	 			<li class="smedia-icons"><a class="smedia-link" href="https://www.linkedin.com/pub/zo%C3%AB-mclean/8a/61/530"><img src="assets/linkedin.png" alt=""></a></li>
+	 			<li class="smedia-icons"><a class="smedia-link" href="https://twitter.com/ZoeAKMclean"><img src="assets/twitter.png" alt=""></a></li>
+	 			<li class="smedia-icons"><a class="smedia-link" href="http://www.pinterest.com/zoeakmclean/"><img src="assets/pinterest.png" alt=""></a></li>
+	 		</ul></div>
 	 	</div>
-	</div>
+</header>
+<div id="intro">
+	
 	
 	<div class="container-fluid welcome">
 		<div class="row">
@@ -71,8 +81,8 @@
 				<a href="#contact-section">Contact</a>
 			</nav>
 		</div>
+		<div class="scroll-icon"><h3 class="scroll">scroll down</h3></div>
 	</div>
-	
 </div>
 <!-- end of fluid container -->
 
@@ -82,13 +92,13 @@
 			<div class="row" id="me">
 				<div class="col-md-10 col-md-offset-1">
 					<div class="row ">
-						<div class="pic col-xs-4 col-sm-4 col-md-2">
+						<div class="pic col-xs-4 col-sm-4 col-md-2 col-md-offset-5">
 						<img src="assets/me.png" alt="" class="img-responsive">
 						</div>
-						<div class="col-xs-8 col-sm-8 col-md-4">
-							<h1>About me</h1>
+						<div class="col-xs-8 col-sm-8 col-md-4 col-md-offset-4">
+							<h1 class="">About me</h1>
 						</div>
-						<div class="col-xs-12 col-sm-8 col-md-offset-0 col-md-6 ">
+						<div class="col-xs-12 col-sm-8 col-md-offset-3 col-md-6">
 							<p class="about">The result of an artistic mother, a techie father and a truckload of art supplies,
 							 I live for making and telling awesome stories through art, design and the web. 
 							<span class="interest">And, good news! I'm available for work! Come say <a href="">"hello".</a></span></p>
@@ -99,11 +109,64 @@
 		</div>
 	</div>
 		
-	
+
 
 
 	<div id="work-section" >
 		<div class="container work">
+		<!-- Work Modal -->
+		<script type="text/x-handlebars-template" id="project-detail">
+	{{#each projects}}
+	<div class="modal container fade" id="{{id}}" tabindex="-1" role="dialog" aria-labelledby="{{id}}"
+		aria-hidden="true">
+		<div class="modal-dialog col-md-12">
+			<div class="modal-content">
+				<div class="modal-header clearfix" style="background: url('{{img1}}')">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+						<span class="sr-only">Close</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-7 col-md-push-5">
+							<img class="img-responsive modal-image" src="{{img1}}" alt="">
+						</div>
+						<div class="col-md-5 col-md-pull-7 description-column">
+						<h2>{{title}}<br><small>{{date}}</small></h2>
+						<p class="project-description">{{text}}</p>
+						<label for="techs">Techonologies Used</label>
+						<ul id="techs">
+						{{#each techs}}
+							<li class="tech">{{tech}}</li>
+						{{/each}}
+						</ul>
+						
+						<a href="{{behanceLink}}">See this project on Behance</a>
+						</div>
+					</div>
+					<div class="row">
+						
+						<div class="col-md-12">
+							<img class="img-responsive modal-image" src="{{img2}}" alt="">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6"><img class="img-responsive modal-image" src="{{img3}}" alt=""></div>
+						<div class="col-md-6"><img class="img-responsive modal-image" src="{{img4}}" alt=""></div>
+					</div>
+					<div class="row">
+						<div class="col-md-12"><img class="img-responsive modal-image" src="{{img5}}" alt=""></div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default modal-image" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		{{/each}}
+</script>
 			<div class="row projects-header">
 				<h1 class="greeting">Works</h1>
 			</div>
@@ -124,9 +187,9 @@
 						<figure class="gi730">
 							<img src="assets/600/ce2.jpg" class="gallerythumb">
 							<div class="figcaption visible-md visible-lg">
-								<h2 class="project-name">Environment Sketches <small>2014</small></h2>
+								<h2 class="project-name">Environment Sketches <small>Ongoing</small></h2>
 								<p>Quick studies and sketchess to capture the essence of a scene.</p>
-								<a class="project-link" data-toggle="modal" href="#enviro-sketches">View more...</a>
+								<a class="project-link" data-toggle="modal" href="#enviro-sketch">View more...</a>
 							</div>
 						</figure>
 					</div>
@@ -135,7 +198,7 @@
 							<img src="assets/600/tinder.jpg" class="gallerythumb">
 							<div class="figcaption visible-md visible-lg">
 								<h2 class="project-name">The Tinder-Box <small>2012</small></h2>
-								<p>Project description with wordy word-word words.</p>
+								<p>Concept design project.</p>
 								<a class="project-link" href="#">View more...</a>
 							</div>
 						</figure>
@@ -145,7 +208,7 @@
 							<img src="assets/600/tarot.jpg" class="gallerythumb">
 							<div class="figcaption visible-md visible-lg">
 								<h2 class="project-name">The fool,<br> The magician and the lovers <small>2012</small></h2>
-								<p>Project description with wordy word-word words.</p>
+								<p>Digital painting series.</p>
 								<a class="project-link" href="#">View more...</a>
 							</div>
 						<figure>
@@ -155,7 +218,7 @@
 							<img src="assets/600/doombird.jpg" class="gallerythumb">
 							<div class="figcaption visible-md visible-lg">
 								<h2 class="project-name">Doombird <small>2014</small></h2>
-								<p>Project description with wordy word-word words.</p>
+								<p class="">Branding and Application using Twitter API.</p>
 								<a class="project-link" href="#">View more...</a>
 							</div>
 						</figure>
@@ -164,8 +227,8 @@
 						<figure>
 							<img src="assets/600/rx2.jpg" class="gallerythumb">
 							<div class="figcaption visible-md visible-lg">
-								<h2 class="project-name">Rx2</h2>
-								<p>Project description with wordy word-word words.</p>
+								<h2 class="project-name">Rx2 <small>2014</small></h2>
+								<p>Branding and Web for a sports-wear company.</p>
 								<a class="project-link" href="#">View more...</a>
 							</div>
 						</figure>
@@ -174,8 +237,8 @@
 						<figure class="gi350">
 							<img src="assets/600/thad.jpg" class="gallerythumb">
 							<div class="figcaption visible-md visible-lg">
-								<h2 class="project-name">Character Design <small></small></h2>
-								<p>Project description with wordy word-word words.</p>
+								<h2 class="project-name">Character Design <small>Ongoing</small></h2>
+								<p>Various charcter designs for projects and personal enjoyment.</p>
 								<a class="project-link" href="#">View more...</a>
 							</div>
 						</figure>
@@ -184,8 +247,8 @@
 						<figure class="gi350">
 							<img src="assets/600/rabbit.jpg" class="gallerythumb">
 							<div class="figcaption visible-md visible-lg">
-								<h2 class="project-name">Yellow Rabbit</h2>
-								<p>Project description with wordy word-word words.</p>
+								<h2 class="project-name">Yellow Rabbit <small>2014</small></h2>
+								<p>Branding and Web for a restaurant.</p>
 								<a class="project-link" href="#">View more...</a>
 							</div>
 						</figure>
@@ -194,18 +257,18 @@
 						<figure class="gi730">
 							<img src="assets/600/makingfriends.jpg" class="gallerythumb">
 							<div class="figcaption visible-md visible-lg">
-								<h2 class="project-name">Making Friends <small>2013</small></h2>
-								<p>Project description with wordy word-word words.</p>
+								<h2 class="project-name">Making Old Friends <small>2013</small></h2>
+								<p>Digital Painting for Chromacon, 2013.</p>
 								<a class="project-link" href="#">View more...</a>
 							</div>
 						</figure>
 					</div>
 					<div class="project-item col-md-4 col-xs-6 effect-lily" id="item11">
 						<figure class="gi600">
-							<img src="http://placehold.it/600x600" class="gallerythumb">
+							<img src="assets/600/db.jpg" class="gallerythumb">
 							<div class="figcaption visible-md visible-lg">
-								<h2 class="project-name">Project Title</h2>
-								<p>Project description with wordy word-word words.</p>
+								<h2 class="project-name">Double Barrel <small>2014</small></h2>
+								<p>Website design and build.</p>
 								<a class="project-link" href="#">View more...</a>
 							</div>
 						</figure>
@@ -250,54 +313,7 @@
 	</div>
 
 <!-- Modal -->
-<div class="container">
-<script type="text/x-handlebars-template" id="project-detail">
-	{{#each projects}}
-<div class="modal fade" id="{{id}}" tabindex="-1" role="dialog">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header clearfix">
-				<button type="button" class="close" data-dismiss="modal">
-					<span aria-hidden="true">&times;</span>
-					<span class="sr-only">Close</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				<div class="row">
-					<div class="col-md-12">
-						<img class="img-responsive" src="{{img1}}" alt="">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6">
-					<h2>{{title}} <small>{{date}}</small></h2>
-					<ul class="techs">
-						<li class="tech"></li>
-					</ul>
-					<p>{{text}}</p>
-					<a href="{{behanceLink}}">See on Behance</a>
-					</div>
-					<div class="col-md-6">
-						<img class="img-responsive" src="{{img2}}" alt="">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6"><img class="img-responsive" src="{{img3}}" alt=""></div>
-					<div class="col-md-6"><img class="img-responsive" src="{{img4}}" alt=""></div>
-				</div>
-				<div class="row">
-					<div class="col-md-12"><img class="img-responsive" src="{{img5}}" alt=""></div>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-	{{/each}}
-</script>
-</div>	
+	
 
 
 </div>
