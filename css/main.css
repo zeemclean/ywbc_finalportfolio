@@ -736,11 +736,11 @@ p.large a:hover {
   z-index: -50;
   top: 310px;
   background-repeat: no-repeat;
-  -webkit-animation: clouddrift2 1800s linear 0 infinite both;
-  -moz-animation: clouddrift2 1800s linear 0 infinite both;
-  -o-animation: clouddrift2 1800s linear 0 infinite both;
-  -ms-animation: clouddrift2 1800s linear 0 infinite both;
-  animation: clouddrift2 1800s linear 0 infinite both;
+  -webkit-animation: clouddrift2 1800s linear 0s infinite both;
+  -moz-animation: clouddrift2 1800s linear 0s infinite both;
+  -o-animation: clouddrift2 1800s linear 0s infinite both;
+  -ms-animation: clouddrift2 1800s linear 0s infinite both;
+  animation: clouddrift2 1800s linear 0s infinite both;
 }
 
 /* line 38, ../scss/_intro.scss */
@@ -762,11 +762,11 @@ p.large a:hover {
   z-index: -48;
   top: -120px;
   background-repeat: no-repeat;
-  -webkit-animation: clouddrift1 600s linear 0 infinite both;
-  -moz-animation: clouddrift1 600s linear 0 infinite both;
-  -o-animation: clouddrift1 600s linear 0 infinite both;
-  -ms-animation: clouddrift1 600s linear 0 infinite both;
-  animation: clouddrift1 600s linear 0 infinite both;
+  -webkit-animation: clouddrift1 600s linear 0s infinite both;
+  -moz-animation: clouddrift1 600s linear 0s infinite both;
+  -o-animation: clouddrift1 600s linear 0s infinite both;
+  -ms-animation: clouddrift1 600s linear 0s infinite both;
+  animation: clouddrift1 600s linear 0s infinite both;
 }
 
 /* line 52, ../scss/_intro.scss */
@@ -775,11 +775,11 @@ p.large a:hover {
   z-index: -47;
   top: -150px;
   background-repeat: no-repeat;
-  -webkit-animation: clouddrift2 300s linear 0 infinite both;
-  -moz-animation: clouddrift2 300s linear 0 infinite both;
-  -o-animation: clouddrift2 300s linear 0 infinite both;
-  -ms-animation: clouddrift2 300s linear 0 infinite both;
-  animation: clouddrift2 300s linear 0 infinite both;
+  -webkit-animation: clouddrift2 300s linear 0s infinite both;
+  -moz-animation: clouddrift2 300s linear 0s infinite both;
+  -o-animation: clouddrift2 300s linear 0s infinite both;
+  -ms-animation: clouddrift2 300s linear 0s infinite both;
+  animation: clouddrift2 300s linear 0s infinite both;
 }
 
 /* line 60, ../scss/_intro.scss */
@@ -797,11 +797,11 @@ p.large a:hover {
   width: 3000px;
   top: 500px;
   background-repeat: no-repeat;
-  -webkit-animation: clouddrift1 375s linear 0 infinite both;
-  -moz-animation: clouddrift1 375s linear 0 infinite both;
-  -o-animation: clouddrift1 375s linear 0 infinite both;
-  -ms-animation: clouddrift1 375s linear 0 infinite both;
-  animation: clouddrift1 375s linear 0 infinite both;
+  -webkit-animation: clouddrift1 375s linear 0s infinite both;
+  -moz-animation: clouddrift1 375s linear 0s infinite both;
+  -o-animation: clouddrift1 375s linear 0s infinite both;
+  -ms-animation: clouddrift1 375s linear 0s infinite both;
+  animation: clouddrift1 375s linear 0s infinite both;
 }
 
 /* line 74, ../scss/_intro.scss */

@@ -33,7 +33,7 @@
 	z-index: -50;
 	top: 310px;
 	background-repeat: no-repeat;
-	@include animation(clouddrift2, 1800s, linear, 0, infinite);
+	@include animation(clouddrift2, 1800s, linear, 0s, infinite);
 }
 #cloud2{
 	background:url("../assets/cloud2.png");
@@ -47,7 +47,7 @@
 	z-index: -48;
 	top: -120px;
 	background-repeat: no-repeat;
-	@include animation(clouddrift1, 600s, linear, 0, infinite);
+	@include animation(clouddrift1, 600s, linear, 0s, infinite);
 }
 #cloud4{
 	background:url("../assets/cloud4.png");
@@ -55,7 +55,7 @@
 	top: -150px;
     
     background-repeat: no-repeat;
-	@include animation(clouddrift2, 300s, linear, 0, infinite);
+	@include animation(clouddrift2, 300s, linear, 0s, infinite);
 }
 #fairhill{
 	background:url("../assets/fairhill.png");
@@ -69,7 +69,7 @@
 	width: 3000px;
 	top: 500px;
 	background-repeat: no-repeat;
-	@include animation(clouddrift1, 375s, linear, 0, infinite);
+	@include animation(clouddrift1, 375s, linear, 0s, infinite);
 }
 #nearhill{
 	background:url("../assets/nearhill-alt2.png");
